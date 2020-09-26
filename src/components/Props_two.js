@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-
+import Props_one from "./Props_one"
   class props_two extends Component {
       state={
           name:"Pristan",
           age:24
       }
-      chanename=()=>{
+      changename=()=>{
           this.setState({
               name:"Tasa"
           })
@@ -13,7 +13,7 @@ import React, { Component } from 'react'
     render() {
         return (
             <div>
-<props_one name={this.state.name}  chanename={this.chanename} />
+<Props_one name={this.state.name}  changename={this.changename} />
             </div>
         )
     }
