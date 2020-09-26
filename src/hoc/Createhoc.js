@@ -6,7 +6,19 @@ const Usinghoc = Taking_original_classes=>{
             super(props)
         
             this.state = {
-                 count:0
+                 count:0,
+                 Names:[
+                     {
+                         id:1,
+                         name:"Pristan",
+                         age:24
+                     },
+                     {
+                        id:2,
+                        name:"Tasa",
+                        age:23
+                    }
+                 ]
             }
         }
         increment=()=>{
@@ -15,7 +27,7 @@ const Usinghoc = Taking_original_classes=>{
             })
         }
         render() {
-            return   <Taking_original_classes count={this.state.count} increment={this.increment} />
+            return   <Taking_original_classes count={this.state.count} increment={this.increment} Names={this.state.Names} />
         }
     }
     
