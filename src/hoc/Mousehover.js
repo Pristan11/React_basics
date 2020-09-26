@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Usinghoc from './Createhoc'
+import Mouseclick from './Mouseclick';
   class Mousehover extends Component {
     render() {
         const {count,increment,Names}=this.props;
@@ -8,7 +9,9 @@ import Usinghoc from './Createhoc'
                 <h3>{count}</h3>
                  <p onMouseOver={increment}>hover me</p>
                  {
-                    Names.map(item=><h3>{item.name}</h3>)
+                    Names.map(item=> {
+                        return <Mouseclick item={item} key={item.id} />
+                    })
                  }
             </div>
         )
