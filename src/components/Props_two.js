@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Props_one from "./Props_one"
-  class props_two extends Component {
+  class Props_two extends Component {
       state={
           name:"Pristan",
           age:24,
@@ -31,4 +31,4 @@ import Props_one from "./Props_one"
     }
 }
 
-export default props_two
+export default Props_two
