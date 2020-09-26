@@ -6,7 +6,7 @@ import React, { Component } from 'react'
             <div>
            <h3>{this.props.name}</h3>
            <button onClick={this.props.changename}>click Me</button>
-           <p>{this.props.Name_details.name}</p>
+           {this.props.Name_details.map(item=><h3>{item.name}</h3>)}
             </div>
         )
     }
