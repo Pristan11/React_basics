@@ -7,6 +7,7 @@ import React, { Component } from 'react'
             <div>
                 
                     <h3>the name is {name}</h3>
+                    <button onClick={this.props.changename}>click me im form props of Props_two </button>
               
             </div>
         )

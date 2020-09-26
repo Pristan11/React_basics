@@ -8,7 +8,7 @@ import Props_four from './Props_four'
            <h3>{this.props.name}</h3>
            <button onClick={this.props.changename}>click Me</button>
            { this.props.Name_details.map(item=> {
-          return <Props_four item={item} key={item.id} />
+          return <Props_four item={item} key={item.id} changename={this.props.changename} />
 
            }
            ) } 
