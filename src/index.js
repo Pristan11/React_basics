@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
  import App from './App';
-   
+ import {InfoProvider} from './Context'
+  
 ReactDOM.render(
-    <div>
-  <App />
- </ div>,
+<InfoProvider>
+ <App />
+ </InfoProvider>,
      document.getElementById('root'));
  
