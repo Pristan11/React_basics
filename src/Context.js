@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {placeInfo} from './data'
+import {placeInfo,detailInf,detailInfo,Products} from './data'
 
 const mycontext =React.createContext();
   class InfoProvider extends Component {
@@ -7,7 +7,10 @@ const mycontext =React.createContext();
           super(props)
       
           this.state = {
-               placeInfo:placeInfo
+               placeInfo:placeInfo,
+               detailInf:detailInf,
+               detailInfo:detailInfo,
+               Products:Products
           }
       }
       
@@ -16,8 +19,7 @@ const mycontext =React.createContext();
             <div>
                 
                 <mycontext.Provider value={{
-                    
-            placeInfo:this.state.placeInfo
+placeInfo:this.state.placeInfo
                 }}>
                     {this.props.children}
                 </mycontext.Provider>

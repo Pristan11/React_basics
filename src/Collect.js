@@ -9,7 +9,7 @@ export class Collect extends Component {
            <IConsumer>
                 {value=>{
                    return value.placeInfo.map(item=>{
-                       return <Collect_two item={item} key={item.id} />
+                       return <Collect_two item={item} key={item.id}  />
                    })
                 }}
                
